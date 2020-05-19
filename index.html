@@ -1,22 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Carlo Cirrincione</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity
+      }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      body {
+        font-family: Georgia, serif;
+        position: relative;
+      }
 
-    <title>Hello, world!</title>
+      .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #cc9797;
+        height: 100vh;
+        scroll-snap-align: center;
+      }
+
+      .header h1 {
+        font-size: 80px;
+      }
+
+      .footer {
+        background: #3d3d3d;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+      
+      .fa:any-link {
+        text-decoration: none;
+        color: white;
+      }
+
+      :target::before {
+        display: block;    
+        position: relative;     
+        top: -100px;
+        visibility: hidden;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        padding: 100px;
+        scroll-snap-align: center;
+      }
+
+      #aboutme {
+        background-color: #ba9bb6;
+      }
+
+      #education {
+        background-color: #ceb888;
+      }
+
+      #workexperience {
+        background-color: #9cb5b5;
+      }
+      
+      #projects {
+        background-color: #72b595;
+      }
+
+      #involvement {
+        background-color: #9ba1c4;
+      }
+
+    </style>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body data-spy="scroll" data-target="#topnav" data-offset="70">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="topnav">
+      <a class="navbar-brand" href="#">
+        <img src="resources/me.png" width="50" height="50" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#workexperience">work experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#involvement">involvement</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="header text-light">
+      <h1>A personal portfolio.</h1>
+      <p>curated by Carlo Cirrincione</p>
+    </div>
+
+    <div class="container-fluid content" id="aboutme">
+      <h1 class="text-light">about me</h1>
+    </div>
+
+    <div class="container-fluid content" id="education">
+      <h1 class="anchor"></h1>
+      <h1 class="text-light">education</h1>
+    </div>
+
+    <div class="container-fluid content" id="workexperience">
+      <h1 class="anchor"></h1>
+      <h1 class="text-light">work experience</h1>
+    </div>
+
+    <div class="container-fluid content" id="projects">
+      <h1 class="anchor"></h1>
+      <h1 class="text-light">projects</h1>
+    </div>
+
+    <div class="container-fluid content" id="involvement">
+      <h1 class="anchor"></h1>
+      <h1 class="text-light">involvement</h1>
+    </div>
+
+    <nav class="navbar navbar-expand bg-dark">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="mailto:ccirrin@gmail.com" class="fa fa-envelope"></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/carlo-cirrincione/" class="fa fa-linkedin"></a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/ccirrin" class="fa fa-github"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
