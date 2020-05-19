@@ -17,25 +17,6 @@
         position: relative;
       }
 
-      .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: #cc9797;
-        height: 100vh;
-        scroll-snap-align: center;
-      }
-
-      .header h1 {
-        font-size: 80px;
-      }
-
-      .footer {
-        background: #3d3d3d;
-      }
-
       .fa {
         padding: 10px;
         font-size: 20px;
@@ -53,40 +34,38 @@
         color: white;
       }
 
-      :target::before {
-        display: block;    
-        position: relative;     
-        top: -100px;
-        visibility: hidden;
-      }
-
-      .content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        height: 100vh;
-        padding: 100px;
+      #header {
+        background: #cc9797;
         scroll-snap-align: center;
+      } 
+
+      #header h1 {
+        font-size: 80px;
       }
 
       #aboutme {
         background-color: #ba9bb6;
+        scroll-snap-align: center;
       }
 
       #education {
         background-color: #ceb888;
+        scroll-snap-align: center;
       }
 
       #workexperience {
         background-color: #9cb5b5;
+        scroll-snap-align: center;
       }
       
       #projects {
         background-color: #72b595;
+        scroll-snap-align: center;
       }
 
       #involvement {
         background-color: #9ba1c4;
+        scroll-snap-align: center;
       }
 
     </style>
@@ -120,33 +99,29 @@
       </div>
     </nav>
 
-    <div class="header text-light">
+    <div class="container-fluid text-light d-flex flex-column justify-content-center align-items-center min-vh-100 p-5" id="header">
       <h1>A personal portfolio.</h1>
       <p>curated by Carlo Cirrincione</p>
     </div>
 
-    <div class="container-fluid content" id="aboutme">
-      <h1 class="text-light">about me</h1>
+    <div class="container-fluid text-light d-flex flex-column justify-content-start align-items-center min-vh-100 p-5" id="aboutme">
+      <h1 class="py-5">about me</h1>
     </div>
 
-    <div class="container-fluid content" id="education">
-      <h1 class="anchor"></h1>
-      <h1 class="text-light">education</h1>
+    <div class="container-fluid text-light d-flex flex-column justify-content-start align-items-center min-vh-100 p-5" id="education">
+      <h1 class="py-5">education</h1>
     </div>
 
-    <div class="container-fluid content" id="workexperience">
-      <h1 class="anchor"></h1>
-      <h1 class="text-light">work experience</h1>
+    <div class="container-fluid text-light d-flex flex-column justify-content-start align-items-center min-vh-100 p-5" id="workexperience">
+      <h1 class="py-5">work experience</h1>
     </div>
 
-    <div class="container-fluid content" id="projects">
-      <h1 class="anchor"></h1>
-      <h1 class="text-light">projects</h1>
+    <div class="container-fluid text-light d-flex flex-column justify-content-start align-items-center min-vh-100 p-5" id="projects">
+      <h1 class="py-5">projects</h1>
     </div>
 
-    <div class="container-fluid content" id="involvement">
-      <h1 class="anchor"></h1>
-      <h1 class="text-light">involvement</h1>
+    <div class="container-fluid text-light d-flex flex-column justify-content-start align-items-center min-vh-100 p-5" id="involvement">
+      <h1 class="py-5">involvement</h1>
     </div>
 
     <nav class="navbar navbar-expand bg-dark">
