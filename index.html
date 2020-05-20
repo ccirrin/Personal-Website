@@ -10,7 +10,36 @@
     <style>
       html {
         scroll-behavior: smooth;
-        scroll-snap-type: y proximity
+        scroll-snap-type: y proximity;
+        font-size: 0.7rem;
+      }
+
+      /* xs < 768 */
+      @media screen and (max-width: 767px) {
+          html {
+              font-size: 0.8rem;
+          }
+      }
+
+      /* sm */
+      @media screen and (min-width: 768px) {
+          html {
+              font-size: 0.8rem;
+          }
+      }
+
+      /* md */
+      @media screen and (min-width: 992px) {
+          html {
+              font-size: 1.0rem;
+          }
+      }
+
+      /* lg */
+      @media screen and (min-width: 1200px) {
+          html {
+              font-size: 1.2rem;
+          }
       }
 
       body {
@@ -96,11 +125,9 @@
       </div>
     </nav>
 
-    <div class="container-fluid" id="header">
-      <div class="container text-light d-flex flex-column justify-content-center align-items-center p-5 min-vh-100">
-        <h1 class="display-1">a personal portfolio</h1>
-        <p>curated by Carlo Cirrincione</p>
-      </div>
+    <div class="container-fluid text-light d-flex flex-column justify-content-center align-items-center p-5 min-vh-100" id="header">
+      <h1 class="display-1">a personal portfolio</h1>
+      <p>curated by Carlo Cirrincione</p>
     </div>
 
     <div class="container-fluid" id="aboutme">
