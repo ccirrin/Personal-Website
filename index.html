@@ -17,7 +17,7 @@
       /* xs < 768 */
       @media screen and (max-width: 767px) {
           html {
-              font-size: 0.8rem;
+              font-size: 0.5rem;
           }
       }
 
@@ -48,8 +48,8 @@
       }
 
       .fa {
-        padding: 10px;
-        font-size: 20px;
+        padding: 0.7rem;
+        font-size: 1.5rem;
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
@@ -94,12 +94,16 @@
         scroll-snap-align: start;
       }
 
+      #me {
+        height: 3rem;
+        width: 3rem;
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target="#topnav" data-offset="70">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="topnav">
       <a class="navbar-brand" href="#">
-        <img src="resources/me.png" width="50" height="50" alt="" loading="lazy">
+        <img src="resources/me.png" alt="" loading="lazy" id="me">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
