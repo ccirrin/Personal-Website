@@ -97,12 +97,36 @@
         width: 3rem;
       }
 
+      #purdue:hover {
+        opacity: 0.7;
+      }
+
+      #xylem:hover {
+        opacity: 0.7;
+      }
+
+      #collinsaerospace:hover {
+        opacity: 0.7;
+      }
+
+      #folder {
+        font-size: 5rem;
+      }
+
+      #cat {
+        font-size: 5rem;
+      }
+
+      #utensils {
+        font-size: 5rem;
+      }
+
     </style>
   </head>
   <body data-spy="scroll" data-target="#topnav" data-offset="70">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="topnav">
       <a class="navbar-brand" href="#">
-        <img src="resources/me.png" alt="" loading="lazy" id="me">
+        <img src="resources/me.png" id="me">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -142,25 +166,32 @@
     <div class="container-fluid" id="education">
       <div class="container text-light d-flex flex-column justify-content-start align-items-center p-5 min-vh-100">
         <h1 class="py-5">education</h1>
-        <div class="row">
+        
+        <div class="row container-fluid">
           <div class="col-md-4 mb-5">
-            <img src="resources/purdue.png" alt="" class="img-fluid">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://www.purdue.edu/" id="purdue">
+                  <img src="resources/purdue.png" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
           </div>
           <div class="col-md-8 mb-5">
             <div class="d-flex flex-column justify-content-start">
               <h4 class="text-dark">Bachelor of Science in Computer Science, minor in Philosophy</h4>
               <i class="text-dark">August 2017 - December 2020, Current GPA: 3.96</i>
               <hr class="row">
-              <p>I plan to graduate from Purdue University, West Lafayette in December 2020. I am grateful for the friends I made, the skills I learned, and for the opportunity to be a part of the amazing Computer Science community at Purdue. Boiler Up!</p>
+              <p class="text-dark">I plan to graduate from Purdue University, West Lafayette in December 2020. I am grateful for the friends I made, the skills I learned, and for the opportunity to be a part of the amazing Computer Science community at Purdue. Boiler Up!</p>
             </div>
           </div>
         </div>
 
         <div class="accordion text-dark container-fluid" id="accordion">
-          <div class="card">
+          <div class="card bg-dark">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
-                <button class="btn btn-outline-primary btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-outline-light btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   programming languages
                 </button>
               </h2>
@@ -197,10 +228,10 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div class="card bg-dark">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
-                <button class="btn btn-outline-primary btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-outline-light btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   relevant coursework
                 </button>
               </h2>
@@ -276,12 +307,129 @@
     <div class="container-fluid" id="workexperience">
       <div class="container text-light d-flex flex-column justify-content-start align-items-center p-5 min-vh-100">
         <h1 class="py-5">work experience</h1>
+
+        <div class="row container-fluid">
+          <div class="col-md-4 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://www.xylem.com/" id="xylem">
+                  <img src="resources/xylem.png" alt="" class="img-fluid rounded">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mb-5">
+            <div class="d-flex flex-column justify-content-start">
+              <h4 class="text-dark">Engineering Intern @ Xylem</h4>
+              <i class="text-dark">May 2019 - August 2019</i>
+              <hr class="row">
+              <ul class="text-dark">
+                <li>Developed software in C for a programmable logic controller that monitors and controls HVAC pumps in parallel</li>
+                <li>Created a GUI that allows engineers to monitor and test the status of I/O modules</li>
+                <li>Improved the setup process of the pump controller to be more intuitive</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row container-fluid">
+          <div class="col-md-4 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://www.collinsaerospace.com/" id="collinsaerospace">
+                  <img src="resources/collinsaerospace.png" alt="" class="img-fluid rounded">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mb-5">
+            <div class="d-flex flex-column justify-content-start">
+              <h4 class="text-dark">Software Engineering Intern @ Collins Aerospace (formerly Rockwell Collins)</h4>
+              <i class="text-dark">June 2018 - August 2018</i>
+              <hr class="row">
+              <ul class="text-dark">
+                <li>Helped compile a software requirements specification</li>
+                <li>Converted code from Pascal to C and integrated that code into existing antenna coupler software</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="container-fluid" id="projects">
       <div class="container text-light d-flex flex-column justify-content-start align-items-center p-5 min-vh-100">
         <h1 class="py-5">projects</h1>
+
+        <div class="row container-fluid">
+          <div class="col-md-4 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://github.com/ccirrin/hamlib" class="btn btn-dark btn-block p-5" role="button">
+                  <i class="fas fa-folder" id="folder"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mb-5">
+            <div class="d-flex flex-column justify-content-start">
+              <h4 class="text-dark">Hamlib</h4>
+              <i class="text-dark">April 2020</i>
+              <hr class="row">
+              <ul class="text-dark">
+                <li>Developed a peer-to-peer file sharing application with another student</li>
+                <li>Utilized Python Socket library and the HTTP protocol to send files to clients</li>
+                <li>Utilized Firebase as the centralized file directory</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row container-fluid">
+          <div class="col-md-4 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://purrpoll.firebaseapp.com/main" class="btn btn-dark btn-block p-5" role="button">
+                  <i class="fas fa-cat" id="cat"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mb-5">
+            <div class="d-flex flex-column justify-content-start">
+              <h4 class="text-dark">Purrpoll</h4>
+              <i class="text-dark">April 2019 - May 2019</i>
+              <hr class="row">
+              <ul class="text-dark">
+                <li>Developed a React web application with another student that puts random cats side-by-side for users to choose their favorites</li>
+                <li>Implemented Firebase cloud functions that handle cat pairings and ratings while interfacing with the Firestore database and The Cat API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row container-fluid">
+          <div class="col-md-4 mb-5">
+            <div class="row justify-content-center">
+              <div class="col-6 col-md">
+                <a href="https://github.com/CourtSortOrg/Client" class="btn btn-dark btn-block p-5" role="button">
+                  <i class="fas fa-utensils" id="utensils"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8 mb-5">
+            <div class="d-flex flex-column justify-content-start">
+              <h4 class="text-dark">CourtSort</h4>
+              <i class="text-dark">January 2019 - May 2019</i>
+              <hr class="row">
+              <ul class="text-dark">
+                <li>Developed a React native mobile application with a team of five other people that allows Purdue students to rate dishes and organize meals with friends</li>
+                <li>Implemented Firebase cloud functions that update dining court ratings and user profile information while interfacing with the Firestore database</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
