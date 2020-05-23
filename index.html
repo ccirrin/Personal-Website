@@ -10,7 +10,7 @@
     <style>
       html, body {
         scroll-behavior: smooth;
-        font-size: 0.8rem;
+        font-size: 1.0rem;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
@@ -18,24 +18,10 @@
         position: relative;
       }
 
-      /* xs < 768 */
-      @media screen and (max-width: 767px) {
-          html,body {
-              font-size: 0.8rem;
-          }
-      }
-
-      /* sm */
-      @media screen and (min-width: 768px) {
-          html, body {
-              font-size: 0.9rem;
-          }
-      }
-
       /* md */
       @media screen and (min-width: 992px) {
-          html, body {
-              font-size: 1.0rem;
+          #centerpage {
+            font-size: 4.0rem;
           }
       }
 
@@ -43,6 +29,10 @@
       @media screen and (min-width: 1200px) {
           html, body {
               font-size: 1.1rem;
+          }
+
+          #centerpage {
+            font-size: 5.0rem;
           }
       }
 
@@ -155,7 +145,7 @@
 
     <div class="container-fluid" id="header">
       <div class="container text-light d-flex flex-column justify-content-center align-items-center px-1 py-5 p-md-5 min-vh-100 overflow-auto">
-        <h1 class="display-1">a personal portfolio</h1>
+        <h1 id="centerpage">a personal portfolio</h1>
         <p>curated by Carlo Cirrincione</p>
       </div>
     </div>
